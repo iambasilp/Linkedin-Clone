@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all ease-in-out 0.3s;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.section {
+  padding-block: 50px 10px;
+}
+header .nav_toggle,
+.nav_close {
+  display: none;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header .container .logo {
+  max-width: 150px;
+}
+.header .container .info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.header .container .info .nav_toggle {
+  font-size: 30px;
+}
+.header .container .info .menu {
+  display: flex;
+}
+.header .container .info .menu li {
+  margin-right: 20px;
+}
+.header .container .info .menu li:last-child {
+  position: relative;
+}
+.header .container .info .menu li:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60px;
+  bottom: 50%;
+  width: 2px;
+  height: 40px;
+  background-color: grey;
+}
+.header .container .info .menu li a {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.header .container .info .menu li a i {
+  font-size: 20px;
+  display: block;
+  margin-right: 10px;
+}
+.header .container .info .registration {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .container .info .registration .btn_signup {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid white;
+  padding: 12px 24px;
+  transition: all ease 0.3s;
+}
+.header .container .info .registration .btn_signup:hover {
+  background-color: rgb(226, 223, 223);
+  border: 2px solid rgb(226, 223, 223);
+}
+.header .container .info .registration .btn_signup:focus {
+  background-color: rgb(194, 190, 190);
+  border: 2px solid rgb(194, 190, 190);
+}
+.header .container .info .registration .btn_signin {
+  color: #0a66c2;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #0a66c2;
+  padding: 12px 24px;
+  transition: all ease 0.3s;
+  font-weight: 500;
+}
+.header .container .info .registration .btn_signin:hover {
+  background-color: #deeaf6;
+  color: #06417c;
+}
+.header .container .info .registration .btn_signin:focus {
+  background-color: #bbd6f2;
+  color: #05396e;
+}
+
+@media screen and (max-width: 768px) {
+  .header .nav_toggle {
+    display: flex;
+  }
+
+  .header .info .menu {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0a66c2;
+    height: calc(100vh - 100px);
+    box-shadow: 0 8px 20px rgba(34, 34, 126, 0.5);
+    transition: top 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+  }
+  .header .info .menu .nav_close {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 20px;
+    right: 20px;
+  }
+  .header .container .info .menu li a {
+    color: white;
+    font-size: 40px;
+  }
+  .header .container .info .menu li a i {
+    font-size: 20px;
+    font-size: 40px;
+    display: inline;
+    margin-right: 0;
+  }
+  .header .container .info .registration .btn_signup {
+    font-size: 14px;
+    padding: 12px 18px;
+    text-wrap: nowrap;
+  }
+  .header .container .info .registration .btn_signin {
+    font-size: 14px;
+    padding: 12px 18px;
+    text-wrap: nowrap;
+  }
+}
+.section.home {
+  position: relative;
+}
+.section.home .home_info h1{
+  color: #b24020;
+  font-weight: normal;
+  font-size: 40px;
+}
+.section.home .home_info .inputs{
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 10px;
+  margin: 30px 0;
+}
+.section.home .home_info form .inputs label{
+  font-size: 14px;
+}
+.section.home .home_info form .inputs input{
+  border:1px solid black;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+}
+.section.home .home_info .forgot_password{
+  display: block;
+  color: #0a66c2;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.section.home .home_info .inputs input:hover{
+  border: 1px solid #0a66c2;
+}
+.section.home .home_info .inputs input:focus{
+  outline: none;
+  border: 1px solid #0d58a3;
+}
+.section.home .home_info .btn_login{
+  background-color: #0c6ed0;
+  width: 350px;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #0a66c2;
+  padding: 12px 24px;
+  transition: all ease 0.3s;
+  font-weight: 500;
+}
+.section.home .home_info .btn_login:hover{
+  background-color: #0a66c2;
+  border: 2px solid #095db1;
+}
+.section.home .home_info .btn_login:focus{
+  background-color: #074e95;
+}
+
+.section.home .home_image {
+   position: absolute;
+   width: 750px;
+   top: 50px;
+   right: 5%;
+   bottom: 0;
+   z-index: -1;
+}
+.home_info .horizontal{
+  margin: 30px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home_info .horizontal::before{
+  content: "";
+  display: inline-flex;
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  align-items: center;
+  margin-right: 10px;
+}
+.home_info .horizontal::after{
+  content: "";
+  display: inline-flex;
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  align-items: center;
+  margin-left: 10px;
+}
+.home_info .buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home_info .btn_register{
+  width: 350px;
+  color:black;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  border: 1px solid black;
+  padding: 12px 24px;
+  transition: all ease 0.3s;
+}
+.home_info .btn_register.google{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  
+}
+.home_info .btn_register.google svg{
+  width: 20px;
+}
+.home_info .btn_register.new{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <title>Linkedin | Task</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="linkedin.com">
+                    <img src="./assets/images/LinkedIn_Logo.svg" alt="Linkedin Logo">
+                </a>
+            </div>
+            <div class="info">
+                <ul class="menu">
+                    <li>
+                        <a class="menu_link"
+                            href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_articles">
+                            <i class="ri-article-line"></i>
+                            <span>Articles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu_link"
+                            href="https://www.linkedin.com/pub/dir/+/+?trk=guest_homepage-basic_guest_nav_menu_people">
+                            <i class="ri-team-fill"></i>
+                            <span>People</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu_link"
+                            href="https://www.linkedin.com/learning/search?trk=guest_homepage-basic_guest_nav_menu_learning">
+                            <i class="ri-movie-line"></i>
+                            <span>Learning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu_link"
+                            href="https://www.linkedin.com/jobs/search?trk=guest_homepage-basic_guest_nav_menu_jobs&position=1&pageNum=0">
+                            <i class="ri-briefcase-fill"></i>
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="registration">
+
+                    <a href="https://www.linkedin.com/signup?trk=guest_homepage-basic_nav-header-join"
+                        class="btn btn_signup">
+                        Join now
+                    </a>
+
+                    <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                        class="btn btn_signin">
+                        Log in
+                    </a>
+                </div>
+                <div class="nav_toggle">
+                    <i class="ri-menu-fill"></i>
+                </div>
+                <div class="nav_close">
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="section home">
+            <div class="container grid">
+                <div class="home_info">
+                    <form action="">
+                        <h1 class="home_title">Welcome to your professional community</h1>
+                        <div class="inputs">
+                            <label for="email">Email or Phone</label>
+                            <input type="email" id="email" >
+                            <label for="password">Password</label>
+                            <input type="text" id="password">
+                        </div>
+                        <a href="#" class="forgot_password">Forgot password?</a>
+                        <input type="submit" value="Log in" class="btn btn_login">
+                    </form>
+                    <div class="horizontal">or</div>
+                    <div class="buttons">
+                        <a href="#" class="btn_register google" id="google">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: block;">
+                                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                                <path fill="none" d="M0 0h48v48H0z"></path>
+                            </svg>
+                            Sign in with Google
+                        </a>
+                        <br>
+                        <a href="#" class="btn_register new" id="new">New to LinkedIn? Join now</a>
+                    </div>
+                    
+                </div>
+                <div class="home_image">
+                    <img src="./assets/images/hero.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
